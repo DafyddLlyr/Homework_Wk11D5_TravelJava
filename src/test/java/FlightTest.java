@@ -2,10 +2,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class FlightTest {
@@ -20,7 +20,6 @@ public class FlightTest {
 
     @Before
     public void setup(){
-
         departureTime1 = new Date(2004, 9, 22, 8, 55);
         departureTime2 = new Date(2019, 1, 15, 23, 15);
         plane = new Plane(PlaneType.BOEING747);
@@ -61,6 +60,11 @@ public class FlightTest {
     }
 
     @Test
+    public void flightHasListOfAllSeatNumbers() {
+        assertEquals(450, flight.getRemainingSeatNumbers().size());
+    }
+
+    @Test
     public void flightCanAddPassengers(){
         flight.addPassenger(passenger1);
         assertEquals(1, flight.numberOfPassengers());
@@ -95,6 +99,14 @@ public class FlightTest {
         flight.addPassenger(passenger3);
         assertEquals(2, flight.numberOfPassengers());
         assertEquals(0, flight.numberOfAvailableSeats());
+    }
+
+    @Test
+    public void seatNumberRemovedFromRemainingSeatNumbers(){
+        flight.addPassenger(passenger1);
+        Integer passengerSeatNumber = passenger1.getSeatNumber();
+        assertFalse(flight.getRemainingSeatNumbers().contains(passengerSeatNumber));
+        assertEquals(449, flight.getRemainingSeatNumbers().size());
     }
 
 }

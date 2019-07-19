@@ -3,8 +3,7 @@ import org.junit.Test;
 
 import java.util.Date;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.*;
 
 public class PassengerTest {
 
@@ -40,6 +39,24 @@ public class PassengerTest {
     public void passengerHasFlightPropertyWhenAddedToFlight() {
         flight.addPassenger(passenger);
         assertEquals(flight, passenger.getFlight());
+    }
+
+    @Test
+    public void passengerDoesNotHaveFlightNumberWithoutFlight(){
+        assertNull(passenger.getSeatNumber());
+    }
+
+    @Test
+    public void passengerCanBeAssingedSeatThroughSetter(){
+        passenger.setSeatNumber(13);
+        assertEquals(13, passenger.getSeatNumber(), 0.00);
+    }
+
+    @Test
+    public void passengerHasSeatNumberWhenAssignedFlight(){
+        flight.addPassenger(passenger);
+        Integer passengerSeatNumber = passenger.getSeatNumber();
+        assertFalse(flight.getRemainingSeatNumbers().contains(passengerSeatNumber));
     }
 
 }
