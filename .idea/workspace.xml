@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b4df0f9-adf0-411b-bb7f-53c36f3282b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/FlightManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FlightManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FlightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FlightTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FlightManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FlightManagerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,12 +33,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4086" />
+          <entry key="java" value="4525" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4086" />
+          <entry key="JAVA" value="4525" />
         </counts>
       </usages-collector>
     </session>
@@ -60,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/FlightManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+            <state relative-caret-position="328">
+              <caret line="62" column="40" lean-forward="true" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,13 +69,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FlightManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            <state relative-caret-position="285">
+              <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
               <folding>
-                <marker date="1563533787537" expanded="true" signature="278:598" ph="..." />
+                <marker date="1563539055314" expanded="true" signature="278:598" ph="..." />
               </folding>
             </state>
           </provider>
@@ -136,8 +133,8 @@
         <option value="$PROJECT_DIR$/src/main/java/PlaneType.java" />
         <option value="$PROJECT_DIR$/src/main/java/Flight.java" />
         <option value="$PROJECT_DIR$/src/test/java/FlightTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FlightManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/FlightManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FlightManager.java" />
       </list>
     </option>
   </component>
@@ -230,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in TravelJava">
+  <component name="RunManager" selected="JUnit.FlightManagerTest">
     <configuration name="All in TravelJava" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TravelJava" />
       <option name="PACKAGE_NAME" value="" />
@@ -247,11 +244,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlightManagerTest.canCalculateBaggagePerPassenger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlightManagerTest.canCalculateRemainingAvailabeWeightForBaggageNoBags" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TravelJava" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FlightManagerTest" />
-      <option name="METHOD_NAME" value="canCalculateBaggagePerPassenger" />
+      <option name="METHOD_NAME" value="canCalculateRemainingAvailabeWeightForBaggageNoBags" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -277,18 +274,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All in TravelJava" />
-      <item itemvalue="JUnit.FlightManagerTest.canCalculateBaggagePerPassenger" />
       <item itemvalue="JUnit.FlightTest.flightCanReturnAllPassengers" />
       <item itemvalue="JUnit.FlightTest" />
       <item itemvalue="JUnit.FlightManagerTest" />
+      <item itemvalue="JUnit.FlightManagerTest.canCalculateRemainingAvailabeWeightForBaggageNoBags" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in TravelJava" />
         <item itemvalue="JUnit.FlightManagerTest" />
+        <item itemvalue="JUnit.FlightManagerTest.canCalculateRemainingAvailabeWeightForBaggageNoBags" />
+        <item itemvalue="JUnit.All in TravelJava" />
         <item itemvalue="JUnit.FlightTest" />
         <item itemvalue="JUnit.FlightTest.flightCanReturnAllPassengers" />
-        <item itemvalue="JUnit.FlightManagerTest.canCalculateBaggagePerPassenger" />
       </list>
     </recent_temporary>
   </component>
@@ -306,15 +303,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FlightTest_flightCannotAddPassengerWithoutCapacity - 2019.07.19 at 11h 20m 47s.xml">
-      <configuration name="FlightTest.flightCannotAddPassengerWithoutCapacity" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlightTest_flightCannotAddPassengerWithoutCapacity - 2019.07.19 at 11h 21m 56s.xml">
-      <configuration name="FlightTest.flightCannotAddPassengerWithoutCapacity" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_TravelJava - 2019.07.19 at 11h 22m 02s.xml">
-      <configuration name="All in TravelJava" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_TravelJava - 2019.07.19 at 11h 31m 42s.xml">
       <configuration name="All in TravelJava" configurationId="JUnit" />
     </history-entry>
@@ -335,6 +323,15 @@
     </history-entry>
     <history-entry file="FlightManagerTest - 2019.07.19 at 11h 56m 47s.xml">
       <configuration name="FlightManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_TravelJava - 2019.07.19 at 11h 57m 25s.xml">
+      <configuration name="All in TravelJava" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlightManagerTest - 2019.07.19 at 13h 21m 32s.xml">
+      <configuration name="FlightManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlightManagerTest_canCalculateRemainingAvailabeWeightForBaggageNoBags - 2019.07.19 at 13h 23m 27s.xml">
+      <configuration name="FlightManagerTest.canCalculateRemainingAvailabeWeightForBaggageNoBags" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -447,16 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FlightManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <marker date="1563533787537" expanded="true" signature="278:598" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FlightTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2">
@@ -469,10 +456,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FlightManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+        <state relative-caret-position="328">
+          <caret line="62" column="40" lean-forward="true" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlightManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <folding>
+            <marker date="1563539055314" expanded="true" signature="278:598" ph="..." />
           </folding>
         </state>
       </provider>

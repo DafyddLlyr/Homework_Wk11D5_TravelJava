@@ -15,4 +15,10 @@ public class FlightManager {
         }
         return totalWeight;
     }
+
+    public static double availableBaggageWeight(Flight flight) {
+        double baggageCapacity = flight.getPlane().getWeight() / 2;
+        double checkedInBaggage = weightOfBaggage(flight);
+        return baggageCapacity - checkedInBaggage;
+    }
 }

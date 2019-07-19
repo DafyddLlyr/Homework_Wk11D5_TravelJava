@@ -5,7 +5,6 @@ import static org.junit.Assert.assertEquals;
 
 public class FlightManagerTest {
 
-    private FlightManager flightManager;
     private Flight flight;
     private Plane plane;
     private Passenger passenger1;
@@ -50,6 +49,20 @@ public class FlightManagerTest {
         flight.addPassenger(passenger2);
         flight.addPassenger(passenger3);
         assertEquals(1166.67, FlightManager.weightOfBaggage(flight), 0.01);
+    }
+
+    @Test
+    public void canCalculateRemainingAvailabeWeightForBaggageNoBags() {
+        flight.addPassenger(passenger2);
+        assertEquals(175000, FlightManager.availableBaggageWeight(flight), 0.01);
+    }
+
+    @Test
+    public void canCalculateRemainingAvailableWeightForBaggageWithMultipleBags() {
+        flight.addPassenger(passenger1);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        assertEquals(173833.33, FlightManager.availableBaggageWeight(flight), 0.01);
     }
 
 }
