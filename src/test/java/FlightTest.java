@@ -1,7 +1,10 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class FlightTest {
 
@@ -54,6 +57,15 @@ public class FlightTest {
     public void flightCanAddPassengers(){
         flight.addPassenger(passenger1);
         assertEquals(1, flight.numberOfPassengers());
+    }
+
+    @Test
+    public void flightCanReturnAllPassengers(){
+        flight.addPassenger(passenger1);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        assertEquals(3, flight.getPassengers().size());
+        assertTrue(flight.getPassengers().containsAll(Arrays.asList(passenger1, passenger2, passenger3)));
     }
 
     @Test
