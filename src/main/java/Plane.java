@@ -15,4 +15,5 @@ public class Plane {
     public int getCapacity() {
         return this.capacity;
     }
+
 }
