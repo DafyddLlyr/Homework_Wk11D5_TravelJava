@@ -2,6 +2,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -13,11 +15,16 @@ public class FlightTest {
     Passenger passenger1;
     Passenger passenger2;
     Passenger passenger3;
+    Date departureTime1;
+    Date departureTime2;
 
     @Before
     public void setup(){
+
+        departureTime1 = new Date(2004, 9, 22, 8, 55);
+        departureTime2 = new Date(2019, 1, 15, 23, 15);
         plane = new Plane(PlaneType.BOEING747);
-        flight = new Flight(plane, "OA815", Airport.SYD, Airport.LAX, "12:45");
+        flight = new Flight(plane, "OA815", Airport.SYD, Airport.LAX, departureTime1);
         passenger1 = new Passenger("Jack", 2);
         passenger2 = new Passenger("Kate", 0);
         passenger3 = new Passenger("Hurley", 1);
@@ -50,7 +57,7 @@ public class FlightTest {
 
     @Test
     public void flightHasDepartureTime(){
-        assertEquals("12:45", flight.getDepartureTime());
+        assertEquals(departureTime1, flight.getDepartureTime());
     }
 
     @Test
@@ -82,7 +89,7 @@ public class FlightTest {
     @Test
     public void flightCannotAddPassengerWithoutCapacity(){
         Plane tinyPlane = new Plane(PlaneType.ICONA5);
-        Flight flight = new Flight(tinyPlane, "AD001", Airport.GLA, Airport.EDI, "10:00");
+        Flight flight = new Flight(tinyPlane, "AD001", Airport.GLA, Airport.EDI, departureTime2);
         flight.addPassenger(passenger1);
         flight.addPassenger(passenger2);
         flight.addPassenger(passenger3);
