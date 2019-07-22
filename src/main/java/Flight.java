@@ -52,7 +52,7 @@ public class Flight {
     }
 
     public void createSeats() {
-        for(Integer i = 0; i < this.plane.getCapacity(); i++) {
+        for(Integer i = 1; i <= this.plane.getCapacity(); i++) {
             this.remainingSeatNumbers.add(i);
         }
     }
@@ -67,8 +67,8 @@ public class Flight {
 
     public void addPassenger(Passenger passenger) {
         if(this.numberOfAvailableSeats() > 0) {
-            Random rand = new Random();
-            Integer randomSeat = this.remainingSeatNumbers.get(rand.nextInt(this.remainingSeatNumbers.size()));
+            int randomIndex = new Random().nextInt(this.remainingSeatNumbers.size());
+            Integer randomSeat = this.remainingSeatNumbers.get(randomIndex);
 
             passenger.setSeatNumber(randomSeat);
             passenger.setFlight(this);

@@ -10,13 +10,13 @@ import static org.junit.Assert.assertTrue;
 
 public class FlightTest {
 
-    Flight flight;
-    Plane plane;
-    Passenger passenger1;
-    Passenger passenger2;
-    Passenger passenger3;
-    Date departureTime1;
-    Date departureTime2;
+    private Flight flight;
+    private Plane plane;
+    private Passenger passenger1;
+    private Passenger passenger2;
+    private Passenger passenger3;
+    private Date departureTime1;
+    private Date departureTime2;
 
     @Before
     public void setup(){

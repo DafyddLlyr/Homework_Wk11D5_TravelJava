@@ -8,17 +8,14 @@ import static org.junit.Assert.assertEquals;
 public class FlightManagerTest {
 
     private Flight flight;
-    private Plane plane;
     private Passenger passenger1;
     private Passenger passenger2;
     private Passenger passenger3;
-    private Date departureTime;
-
 
     @Before
     public void setup(){
-        departureTime = new Date(2004, 9, 22, 8, 55);
-        plane = new Plane(PlaneType.BOEING747);
+        Date departureTime = new Date(2004, 9, 22, 8, 55);
+        Plane plane = new Plane(PlaneType.BOEING747);
         flight = new Flight(plane, "OA815", Airport.SYD, Airport.LAX, departureTime);
         passenger1 = new Passenger("Jack", 2);
         passenger2 = new Passenger("Kate", 0);
