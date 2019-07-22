@@ -28,11 +28,12 @@ public class Passenger {
         this.flight = flight;
     }
 
+    public void setSeatNumber(Integer seatNumber) {
+        this.seatNumber = seatNumber;
+    }
+
     public Integer getSeatNumber() {
         return this.seatNumber;
     }
 
-    public void setSeatNumber(Integer seatNumber) {
-        this.seatNumber = seatNumber;
-    }
 }
